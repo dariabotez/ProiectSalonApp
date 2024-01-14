@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProiectSalonApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProiectSalonApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ProiectSalonApp">
+
+    <TabBar>
+        <ShellContent
+             Title="Salon Services"
+             ContentTemplate="{DataTemplate local:MainPage}"
+             />
+        <ShellContent
+             Title="About"
+             ContentTemplate="{DataTemplate local:AboutPage}"
+             />
+        <ShellContent
+             Title="My Booked Services"
+             ContentTemplate="{DataTemplate local:ListEntryPage}"
+             />
+        
+    </TabBar>
+
+</Shell>
